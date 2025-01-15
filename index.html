@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lingua Preserva - A comprehensive platform for endangered and rare languages.">
+    <meta name="keywords" content="Endangered Languages, Rare Languages, Linguistics, Grammar, Preservation">
+    <meta name="author" content="Lingua Preserva Team">
+    <title>Lingua Preserva - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #004080, #0059b3);
+            color: white;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #003366;
+            transform: scale(1.1);
+        }
+
+        nav ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #004080;
+            border-radius: 8px;
+            display: none;
+            min-width: 180px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #003366;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 20px;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .hero div {
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero .cta a {
+            background: linear-gradient(90deg, #ff6600, #cc5200);
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hero .cta a:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 40px;
+            background-color: #fff;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.8em;
+            margin-bottom: 40px;
+            color: #004080;
+        }
+
+        .features .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .features .feature-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .features .feature-item:hover {
+            transform: translateY(-15px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .features .feature-item i {
+            font-size: 3.5em;
+            color: #004080;
+            margin-bottom: 20px;
+        }
+
+        .features .feature-item h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .features .feature-item p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        /* Footer Section */
+        .footer {
+            background: #222;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1em;
+            margin: 15px 0 0;
+        }
+
+        /* Mobile Layout Adjustments */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 22px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .cta a {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul li ul {
+                min-width: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .features .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Lingua Preserva Logo">
+            Lingua Preserva
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a>
+                    <ul>
+                        <li><a href="our mission.html">Our Mission</a></li>
+                        <li><a href="our vision.html">our vision</a></li>
+                        <li><a href="our history.html"> our history</a></li>
+                        <li><a href="research and publication.html">Research And Public</a></li>
+
+
+
+                        <li><a href="#team">Our Team</a></li>
+                    </ul>
+                </li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#languages">Languages</a>
+                    <ul>
+                        <li><a href="#rare">Rare Languages</a></li>
+                        <li><a href="#endangered">Endangered Languages</a></li>
+                    </ul>
+                </li>
+               
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="legal.html">Legal</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Welcome to Lingua Preserva</h1>
+            <p>Preserving and Documenting the World's Endangered Languages</p>
+            <div class="cta">
+                <a href="#features">Explore Features</a>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <h2>Our Features</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <i class="fas fa-language"></i>
+                <h3 <a href="lang database1.html">Language Database</a></h3>
+                <p>Access comprehensive grammatical structures and vocabulary.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-search"></i>
+                <h3<a href="lang analysis tool page.html">Research Tool</a>s</h3>
+                <p>Compare and analyze linguistic data with advanced tools.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-book"></i>
+                <h3>Learning Modules</h3>
+                <p><h3><a href="lang learning mod.html"> Interactive courses to learn endangered languages</a></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Lingua Preserva. All rights reserved.</p>
+    </footer>
+</body>
+</html>

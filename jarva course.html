@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarawa Language Course</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2a9d8f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        .container {
+            padding: 20px;
+        }
+        .module {
+            background: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .module h2 {
+            color: #2a9d8f;
+            margin-bottom: 10px;
+        }
+        .module p {
+            margin: 5px 0;
+        }
+        .module ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+        .btn-register {
+            display: block;
+            width: 100%;
+            max-width: 250px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            text-align: center;
+            background: #e76f51;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-register:hover {
+            background: #d0573b;
+        }
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        .popup-content {
+            background: white;
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        .popup-content h3 {
+            color: #2a9d8f;
+            margin-bottom: 15px;
+        }
+        .popup-content p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .popup-content .price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #e76f51;
+            margin-bottom: 20px;
+        }
+        .popup-content ul {
+            list-style: square;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .popup-content a {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background: #2a9d8f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .popup-content a:hover {
+            background: #1e7666;
+        }
+        .popup-content .close-btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 15px;
+            background: #e76f51;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        .popup-content .close-btn:hover {
+            background: #d0573b;
+        }
+                /* Footer Section */
+        .footer {
+          background: #222;
+          color: white;
+          padding: 40px 20px;
+          text-align: center;
+        }
+
+        .footer p {
+          font-size: 1em;
+          margin: 15px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jarawa Language Online Course</h1>
+        <p>Preserve and Learn the Jarawa Language</p>
+    </header>
+    <div class="container">
+        <!-- Module 1 -->
+        <div class="module">
+            <h2>Module 1: Foundations of the Jarawa Language</h2>
+            <p><strong>Objective:</strong> Introduce learners to basic vocabulary, pronunciation, and sentence structures.</p>
+            <p><strong>Topics Covered:</strong></p>
+            <ul>
+                <li>Introduction to the Jarawa Tribe and Language.</li>
+                <li>Phonetics and Pronunciation Basics.</li>
+                <li>Vocabulary: Nature, Family, and Everyday Objects.</li>
+                <li>Simple Sentence Formation and Greetings.</li>
+            </ul>
+        </div>
+        <!-- Module 2 -->
+        <div class="module">
+            <h2>Module 2: Exploring Jarawa Grammar and Syntax</h2>
+            <p><strong>Objective:</strong> Enhance understanding of grammar, syntax, and conversational skills.</p>
+            <p><strong>Topics Covered:</strong></p>
+            <ul>
+                <li>Noun Classification, Gender, and Case Markings.</li>
+                <li>Advanced Sentence Patterns (Questions, Negations).</li>
+                <li>Cultural Integration through Greetings and Customs.</li>
+                <li>Vocabulary: Hunting, Weather, and Social Interactions.</li>
+            </ul>
+        </div>
+        <!-- Module 3 -->
+        <div class="module">
+            <h2>Module 3: Advanced Communication and Cultural Narratives</h2>
+            <p><strong>Objective:</strong> Develop fluency in advanced conversations and cultural storytelling.</p>
+            <p><strong>Topics Covered:</strong></p>
+            <ul>
+                <li>Complex Sentence Structures and Idiomatic Expressions.</li>
+                <li>Conversational Fluency on Daily Life and Cultural Practices.</li>
+                <li>Exploring Jarawa Myths, Legends, and Songs.</li>
+                <li>Vocabulary: Rituals, Festivals, and Ecological Wisdom.</li>
+            </ul>
+        </div>
+        <!-- Module 4 -->
+        <div class="module">
+            <h2>Module 4: Preservation and Linguistic Research</h2>
+            <p><strong>Objective:</strong> Learn techniques for language documentation and preservation.</p>
+            <p><strong>Topics Covered:</strong></p>
+            <ul>
+                <li>Language Documentation Techniques and Tools.</li>
+                <li>Impact of Globalization on Jarawa Language.</li>
+                <li>Teaching the Language: Lesson Plans and Activities.</li>
+                <li>Advocacy for Language Preservation.</li>
+            </ul>
+        </div>
+        <!-- Register Button -->
+        <a class="btn-register" onclick="openPopup()">Register Course</a>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h3>Jarawa Language Course</h3>
+            <p>Learn the unique language and culture of the Jarawa people!</p>
+            <p class="price">Price: ₹1780/-</p>
+            <p><strong>Features:</strong></p>
+            <ul>
+                <li>Interactive lesson, vocab and jarawa culture.</li>
+                <li>Step-by-step progress tracking.</li>
+                <li>Certification after completion.</li>
+            </ul>
+            <a href="mailto:contact.lpcourse@gmail.com">Email Us</a>
+            <a href="https://wa.me/919555754494" target="_blank">WhatsApp Us</a>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+    
+        <footer class="footer">
+      <p>&copy; 2025 Lingua Preserva. All rights reserved.</p>
+</body>
+</html>

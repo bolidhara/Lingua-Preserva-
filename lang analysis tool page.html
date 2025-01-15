@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore advanced linguistic analysis tools including text analyzers, phonetic mapping, and morphological generators.">
+    <meta name="keywords" content="Linguistic Analysis, Grammar Tools, Phonetics, Morphology, Syntax Analysis">
+    <meta name="author" content="Lingua Preserva Team">
+    <title>Linguistic Analysis Tools - Lingua Preserva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #00274d;
+            color: white;
+            padding: 15px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('analysis-tools-bg.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin: 15px 0;
+        }
+
+        .hero .cta {
+            margin-top: 20px;
+        }
+
+        .hero .cta a {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .hero .cta a:hover {
+            background-color: #cc5200;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tools Section */
+        .tools {
+            padding: 50px 0;
+            background-color: #ffffff;
+        }
+
+        .tools h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #00274d;
+        }
+
+        .tools p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .tool-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .tool-item img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .tool-item .tool-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .tool-item .tool-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #00274d;
+        }
+
+        .tool-item .tool-content p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .tool-item .tool-content a {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .tool-item .tool-content a:hover {
+            background-color: #cc5200;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer .social-icons {
+            margin: 15px 0;
+        }
+
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        .footer .social-icons a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Lingua Preserva Logo">
+                Lingua Preserva
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="database.html">Database</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Advanced Linguistic Tools</h1>
+            <p>Empowering researchers and learners with cutting-edge linguistic analysis.</p>
+            <div class="cta">
+                <a href="#tools">Explore Tools</a>
+            </div>
+        </div>
+    </section>
+    <section class="tools" id="tools">
+        <div class="container">
+            <h2>Linguistic Analysis Tools</h2>
+            <p>Discover tools that help analyze grammar, phonetics, and morphology effectively.</p>
+
+            <!-- Tool Item 1 -->
+            <div class="tool-item">
+                <img src="text-analyzer.jpg" alt="Text Analyzer">
+                <div class="tool-content">
+                    <h3>Text Analyzer</h3>
+                    <p>Upload text to analyze its grammatical structure, sentence patterns, and linguistic features.</p>
+                    <a href="text-analyzer.html">Use Tool</a>
+                </div>
+            </div>
+
+            <!-- Tool Item 2 -->
+            <div class="tool-item">
+                <img src="phonetics-mapper.jpg" alt="Phonetics Mapper">
+                <div class="tool-content">
+                    <h3>Phonetics Mapper</h3>
+                    <p>Map the phonetic elements of a language with interactive sound models and visualizations.</p>
+                    <a href="phonetics-mapper.html">Use Tool</a>
+                </div>
+            </div>
+
+            <!-- Tool Item 3 -->
+            <div class="tool-item">
+                <img src="morphology-generator.jpg" alt="Morphological Generator">
+                <div class="tool-content">
+                    <h3>Morphological Generator</h3>
+                    <p>Explore how words are formed and create new words using this dynamic generator.</p>
+                    <a href="morphology-generator.html">Use Tool</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2025 Lingua Preserva. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn endangered languages with interactive grammar lessons, pronunciation practice, and vocabulary quizzes.">
+    <meta name="keywords" content="Language Learning, Endangered Languages, Grammar Lessons, Vocabulary, Pronunciation">
+    <meta name="author" content="Lingua Preserva Team">
+    <title>Language Learning Module - Lingua Preserva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #1a237e;
+            color: white;
+            padding: 15px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('learning-bg.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.4em;
+            margin: 15px 0;
+        }
+
+        .hero .cta {
+            margin-top: 20px;
+        }
+
+        .hero .cta a {
+            background-color: #ff6f00;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .hero .cta a:hover {
+            background-color: #e65100;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Learning Section */
+        .learning {
+            padding: 50px 0;
+            background-color: #ffffff;
+        }
+
+        .learning h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #1a237e;
+        }
+
+        .learning p {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .lesson-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .lesson-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .lesson-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .lesson-card .card-content {
+            padding: 20px;
+        }
+
+        .lesson-card .card-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #1a237e;
+        }
+
+        .lesson-card .card-content p {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .lesson-card .card-content a {
+            background-color: #ff6f00;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .lesson-card .card-content a:hover {
+            background-color: #e65100;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer .social-icons {
+            margin: 15px 0;
+        }
+
+        .footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+
+        .footer .social-icons a:hover {
+            color: #ff6f00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Lingua Preserva Logo">
+                Lingua Preserva
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="database.html">Database</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="#learning">Learning</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div>
+            <h1>Learn Rare Languages</h1>
+            <p>Interactive lessons to master grammar, vocabulary, and pronunciation.</p>
+            <div class="cta">
+                <a href="#lessons">Start Learning</a>
+            </div>
+        </div>
+    </section>
+    <section class="learning" id="learning">
+        <div class="container">
+            <h2>Language Learning Modules</h2>
+            <p>Explore interactive lessons designed to teach endangered languages effectively.</p>
+            <div class="lesson-list">
+                <!-- Lesson Card 1 -->
+                <div class="lesson-card">
+                    <img src="grammar-lesson.jpg" alt="Grammar Lesson">
+                    <div class="card-content">
+                        <h3>Grammar Basics</h3>
+                        <p>Learn the foundational grammar rules of the selected language.</p>
+                        <a href="grammar-lesson.html">Start Lesson</a>
+                    </div>
+                </div>
+                <!-- Lesson Card 2 -->
+                <div class="lesson-card">
+                    <img src="vocabulary-lesson.jpg" alt="Vocabulary Lesson">
+                    <div class="card-content">
+                        <h3>Vocabulary Builder</h3>
+                        <p>Expand your vocabulary with categorized word lists and exercises.</p>
+                        <a href="vocabulary-lesson.html">Start Lesson</a>
+                    </div>
+                </div>
+                <!-- Lesson Card 3 -->
+                <div class="lesson-card">
+                    <img src="pronunciation.jpg" alt="Pronunciation Practice">
+                    <div class="card-content">
+                        <h3>Pronunciation Practice</h3>
+                        <p>Practice speaking and perfect your pronunciation with AI tools.</p>
+                        <a href="pronunciation-practice.html">Start Lesson</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lingua Preserva. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
